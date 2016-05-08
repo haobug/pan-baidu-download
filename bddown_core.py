@@ -71,7 +71,6 @@ class Pan(object):
         elif _platform == 'linux':
             os.system('xdg-open %s > /dev/null 2>&1 &' % vcode)
 
-
     def _handle_captcha(self, bdstoken=None):
         url = BAIDUPAN_SERVER + 'getcaptcha'
         d = {}
